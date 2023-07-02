@@ -13,7 +13,7 @@
 (define (improve guess x) (average guess (/ x guess)))
 
 (define (sqrt-iter guess x)
-  (new-if (good-enough? guess x)
+  (if (good-enough? guess x)
       guess
       (sqrt-iter (improve guess x)
                  x)))
