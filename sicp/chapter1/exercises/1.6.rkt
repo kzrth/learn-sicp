@@ -1,4 +1,7 @@
 #lang sicp
+
+(#%require rackunit)
+
 (define (new-if predicate then-clause else-clause) (cond (predicate then-clause)
         (else else-clause)))
 
@@ -21,4 +24,4 @@
 (define (sqrt x)
   (sqrt-iter 1.0 x))
 
-(sqrt 9)
+(check-equal? (round (sqrt 9)) 3.0)

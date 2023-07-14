@@ -27,5 +27,3 @@
 (check-equal? (round (sqrt-cube 64)) 4.0)
 (check-equal? (round (sqrt-cube 125)) 5.0)
 
-
-
